@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Website</title>
+  <style>
+    /* CSS styling can be added here */
+    /* ... previous styles ... */
+
+    .project-item {
+      margin-bottom: 20px;
+    }
+
+    .project-item h2 {
+      margin-top: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="bio">
+    <h1>Bio</h1>
+    <p>I am a passionate web developer with a strong background in HTML, CSS, and JavaScript. I have experience working on various web projects and enjoy creating beautiful and functional websites.</p>
+  </section>
+
+  <section id="skills">
+    <h1>Skills</h1>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Bootstrap</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <ul>
+      <li class="project-item">
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae lacus enim. Suspendisse potenti. Sed malesuada metus a dolor ultrices, id tristique velit ultrices.</p>
+        <a href="#" class="project-link">View Project</a>
+      </li>
+      <li class="project-item">
+        <h2>Project 2</h2>
+        <p>Nulla consequat justo et mauris finibus, sed dictum risus rutrum. Nullam congue ipsum et ex semper, et lacinia purus facilisis.</p>
+        <a href="#" class="project-link">View Project</a>
+      </li>
+      <!-- Add more project items as needed -->
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <div class="contact-info">
+      <div>
+        <h3>Email</h3>
+        <p>email@example.com</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <p>+1 123-456-7890</p>
+      </div>
+    </div>
+    <form action="#" method="post">
+      <h2>Send me a message</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
